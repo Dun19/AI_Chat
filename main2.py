@@ -1,7 +1,8 @@
 import openai
 import gradio
+from config import api_key, chat_completion
 
-openai.api_key = "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"
+openai.api_key = api_key
 
 messages = [{"role": "system",
              "content": "You are a financial experts that specializes in real estate investment and negotiation"}]
